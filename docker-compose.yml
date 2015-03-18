@@ -1,0 +1,11 @@
+nginx:
+  hostname: nginx
+  build: docker/nginx
+  ports:
+    - "80:80"
+    - "443:443"
+  restart: always
+
+haproxy:
+  hostname: haproxy
+  build: docker/haproxy
