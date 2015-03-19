@@ -9,3 +9,6 @@ nginx:
 haproxy:
   hostname: haproxy
   build: docker/haproxy
+  ports:
+    - "22:22"
+  restart: always

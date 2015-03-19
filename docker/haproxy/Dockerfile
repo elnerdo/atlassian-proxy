@@ -23,6 +23,7 @@ ADD start.bash /haproxy-start
 VOLUME ["/haproxy-override"]
 
 # Define working directory.
+USER root
 WORKDIR /etc/haproxy
 
 # Define default command.
