@@ -11,4 +11,5 @@ haproxy:
   build: docker/haproxy
   ports:
     - "22:22"
+    - "7999:7999"
   restart: always
